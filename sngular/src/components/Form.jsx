@@ -19,7 +19,7 @@ export default function Form({ onCalc }){
         <input className="campo" type="number" value={number} onChange={handleInputChange} />
       </label>
       <div className="campo">
-        <button type="submit">Calcular Término</button>
+        <input type="submit" value="Ejecutar"/> 
       </div>
     </form>
   )

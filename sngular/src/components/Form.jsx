@@ -1,7 +1,7 @@
 import {useState} from 'react'
 
 export default function Form({ onCalc }){
-  const [number, setNumber] = useState(1)
+  const [number, setNumber] = useState(0)
 
   const handleInputChange = (e) => {
     setNumber(parseInt(e.target.value, 10))

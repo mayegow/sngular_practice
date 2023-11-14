@@ -94,7 +94,7 @@ header h1 {
     background-color: var(--gris-claro);
     border-radius: 1rem;
     padding: 1rem;
-    border: none;
+    border: 1px solid #ddd;
     flex: 1;
     font-size: 1.6rem;
 }

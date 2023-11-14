@@ -6,8 +6,14 @@ import SeriesCalculate from './helpers'
 const App = () => {
   const [serie, setSerie] = useState(null);
 
+  const calcSerie = number => {
+    let serie = new SeriesCalculate()
+    const result = (3 * SeriesCalculate.fibonacci(number) - 3 * SeriesCalculate.triangular(number-1)) / (number - 10) * SeriesCalculate.primo(number + 2)
+    return result
+  }
+
   const hanldeSerie = n => {
-    const serieCaculed = SeriesCalculate.calcSerie(n)
+    const serieCaculed = calcSerie(n)
     setSerie(serieCaculed)
   };
 

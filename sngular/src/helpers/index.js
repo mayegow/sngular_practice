@@ -35,10 +35,7 @@ class SeriesCalculate {
       return true
     }
   
-    static calcSerie = number => {
-        const result = (3 * this.fibonacci(number) - 3 * this.triangular(number-1)) / (number - 10) * this.primo(number + 2)
-        return result
-    }
+    
   }
 
 export default SeriesCalculate
